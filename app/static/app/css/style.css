@@ -6,7 +6,7 @@
     transition: transform .5s ease;
    }
    
-    .owl-carousel .item:hover{
+.owl-carousel .item:hover{
        /* border: 1px solid black; */
        transform : scale(1.1);
    }
@@ -19,72 +19,83 @@
        transform : scale(1.25);
    } */
    
-   .owl-next{
+.owl-next{
     float:right;
    }
-   .owl-prev{
+.owl-prev{
     float:left;
    }
-   .owl-prev span{
+.owl-prev span{
     font-size: 24px;
     font-weight: bold;
    }
-   .owl-next span{
+.owl-next span{
     font-size: 24px;
     font-weight: bold;
    }
    
-   .buttermilk{
-       background-color:#fff;background-image:linear-gradient(#fff7ef, #fff);
-       background-image:-webkit-linear-gradient(#fff7ef, #fff);
-       background-image:-moz-linear-gradient(#fff7ef, #fff);
-       background-image:-ms-linear-gradient(#fff7ef, #fff);
-       background-image:-o-linear-gradient(#fff7ef, #fff);
-       padding:50px 40px;
-       border:1px solid #efe8e1;
-       padding-bottom:20px;
+.buttermilk{
+    background-color:#fff;background-image:linear-gradient(#fff7ef, #fff);
+    background-image:-webkit-linear-gradient(#fff7ef, #fff);
+    background-image:-moz-linear-gradient(#fff7ef, #fff);
+    background-image:-ms-linear-gradient(#fff7ef, #fff);
+    background-image:-o-linear-gradient(#fff7ef, #fff);
+    padding:50px 40px;
+    border:1px solid #efe8e1;
+    padding-bottom:20px;
    }
    
-   .smbg{
-       background-color:#fff;
-       background-image:linear-gradient(rgba(110, 69, 143, 0.1), #fff);
-       background-image:-webkit-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
-       background-image:-moz-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
-       background-image:-ms-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
-       background-image:-o-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+.smbg{
+    background-color:#fff;
+    background-image:linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-webkit-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-moz-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-ms-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-o-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
    }
    
-   .curdbgpro{
-       background-color:#fff;
-       background-image:linear-gradient(rgba(10, 77, 123, 0.1), #fff);
-       background-image:-webkit-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
-       background-image:-moz-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
-       background-image:-ms-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
-       background-image:-o-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+.curdbgpro{
+    background-color:#fff;
+    background-image:linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+    background-image:-webkit-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+    background-image:-moz-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+    background-image:-ms-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+    background-image:-o-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
    }
    
-   .goodnessseccont img{
-       width:100%;
+.goodnessseccont img{
+    width:100%;
    }
    
-   .mlkpro{
-       color:#636362;
-       font-size:22px;
-       line-height:22px;
-       margin-bottom:15px;
-       width:43%;
-       margin:0 auto;
-       text-align:center;
+.mlkpro{
+    color:#636362;
+    font-size:22px;
+    line-height:22px;
+    margin-bottom:15px;
+    width:43%;
+    margin:0 auto;
+    text-align:center;
        
    }
    
-   .goodnesssec a{
+.goodnesssec a{
        text-decoration: none;
    }
-   .content-section {
+.content-section {
     background: #ffffff;
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin-bottom: 20px;
+  }
+
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+.account-heading {
+    font-size: 2.5rem;
   }
