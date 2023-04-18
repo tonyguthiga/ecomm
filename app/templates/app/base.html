@@ -44,49 +44,46 @@
                         <li><a class="dropdown-item" href="{% url 'category' 'IC' %}">Ice-Creams</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                     <a class="nav-link text-white" href="{% url 'about' %}">About Us</a>
                     </li>
                     <li class="nav-item text-white">
                       <a class="nav-link text-white" href="{% url 'contact' %}">Contact Us</a>
-                    </li> -->
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-9" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
-
+          {% if user.is_authenticated %}
           <ul class="navbar-nav me-auto mb-2 mb-lg-o">
-                <li class="nav-item dropdown mx-2">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Toni</a>
+              <li class="nav-item dropdown mx-2">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ user.username }}</a>
               <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Orders</a></li>
-                <li><a class="dropdown-item" href="#">Change Password</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
+                <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
               </ul>
             </li>
             <li class="nav-item mx-2">
               <a href="#" class="nav-link text-white">Cart 4</a>
-                </li>
+            </li>
             <li class="nav-item mx-2">
               <a href="#" class="nav-link text-white">Wishlist 4</a>
             </li>
-            {% if user.is_authenticated %}
-            <li class="nav-item mx-2">
-              <a href="{% url 'profile' %}" class="nav-link text-white">Profile</a>
+          {% else %}
+            <li class="nav-link mx-2">
+              <a href="{% url 'login' %}" class="nav-link text-white">Login</a>
             </li>
-              <li class="nav-item mx-2">
-                <a href="{% url 'logout' %}" class="nav-link text-white">Logout</a>
-            {% else %}
-                <a href="{% url 'login' %}" class="nav-link text-white">Login</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="{% url 'register' %}" class="nav-link text-white">Registration</a>
-              </li>
-            {% endif %}
-            </ul>
+            <li class="nav-link mx-2">
+              <a href="{% url 'register' %}" class="nav-link text-white">Registration</a>
+            </li>
+            <!-- <li class="nav-item mx-2">
+              <a href="{% url 'register' %}" class="nav-link text-white">Registration</a>
+            </li> -->
+          {% endif %}
+          </ul>
         </div>
       </nav>
     {% if messages %}
